@@ -22,7 +22,7 @@
     </table>
 
     <script>
-        fetch('http://172.31.36.243:25000/pokemons')
+        fetch('/pokemons')
             .then(response => response.json())
             .then(data => {
                 const tableBody = document.querySelector("#pokemonTable tbody");
